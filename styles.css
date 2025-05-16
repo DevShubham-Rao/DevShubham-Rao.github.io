@@ -2,7 +2,10 @@ body {
   background-color: #A8D3AA;
 }
 h1 {
-  color: blue;
+  text-align: center;
+  color: ##006400;
+  font-size: 20px;
+
 }
 p {
   color: red;
