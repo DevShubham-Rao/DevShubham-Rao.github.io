@@ -24,5 +24,11 @@ function typeEffect() {
 
 // Start animation when page loads
 window.onload = typeEffect;
+document.addEventListener("DOMContentLoaded", function () {
+  document.body.classList.add("fade-out");
+  setTimeout(() => {
+    document.body.classList.remove("fade-out");
+  }, 500);
+});
 
 
