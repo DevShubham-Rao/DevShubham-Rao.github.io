@@ -29,27 +29,38 @@ body {
   transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-/* Dark Mode */
-.dark-mode {
-  background-color: #222; /* Dark background */
-  color: #f1f8f4; /* Light text */
+/* Apply smooth transition to all images */
+img {
+  transition: transform 0.3s ease-in-out, opacity 0.6s ease-in-out;
 }
 
-/* Button Styling */
-#darkModeToggle {
-  padding: 10px 20px;
-  background-color: #66bb6a;
+/* Hover effect: Zoom in */
+img:hover {
+  transform: scale(1.1);
+}
+
+/* Make captions smooth for all images within figures */
+figcaption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
   color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+  text-align: center;
+  padding: 10px;
   font-size: 16px;
-  transition: background-color 0.3s ease;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-#darkModeToggle:hover {
-  background-color: #43a047;
+/* Captions appear on hover */
+figure:hover figcaption {
+  opacity: 1;
+  transform: translateY(0);
 }
+
+
 
 
 /* Section Styling */
