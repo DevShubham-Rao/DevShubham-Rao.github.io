@@ -20,6 +20,15 @@ body {
   transform: translateY(0);
 }
 opacity: 1 !important;
+#welcomeText {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2e7d32; /* Forest green */
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid #2e7d32; /* Simulates typing cursor */
+  display: inline-block;
+}
 
 
 
