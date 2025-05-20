@@ -22,6 +22,34 @@ body::before {
   opacity: 0.3; /* Softened for better contrast */
   z-index: -1;
 }
+/* Default Light Mode */
+body {
+  background-color: #f1f8f4;
+  color: #1b5e20;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #222; /* Dark background */
+  color: #f1f8f4; /* Light text */
+}
+
+/* Button Styling */
+#darkModeToggle {
+  padding: 10px 20px;
+  background-color: #66bb6a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#darkModeToggle:hover {
+  background-color: #43a047;
+}
 
 
 /* Section Styling */
