@@ -17,8 +17,9 @@ body {
 
 .fade-in.visible {
   opacity: 1;
-  transform: translateY(0); /* Move to normal position */
+  transform: translateY(0);
 }
+
 
 
 /* Background Overlay */
