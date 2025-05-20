@@ -88,7 +88,7 @@ main {
   min-height: 80vh;
 }
 
-.image-section img {
+img {
   width: 250px;      /* Set a fixed width */
   height: 250px;     /* Set a fixed height */
   object-fit: cover; /* Crop the image to fill the box */
