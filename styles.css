@@ -101,7 +101,7 @@ main {
 }
 
 /* Mission and CTA Sections */
-.mission, .call-to-action {
+.mission, .call-to-action, .impact-stats, .innovation, {
   background-color: #b9f6ca;
   padding: 36px;
   border-radius: 12px;
