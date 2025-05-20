@@ -135,3 +135,9 @@ footer {
 .farm-to-table p {
   margin: 12px 0;
 }
+
+nav a.active {
+  color: #1b5e20; /* Dark forest green */
+  border-bottom: 2px solid #1b5e20;
+}
+
