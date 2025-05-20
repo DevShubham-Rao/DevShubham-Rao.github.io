@@ -30,14 +30,28 @@ opacity: 1 !important;
   display: inline-block;
 }
 
-.fade-out {
-  opacity: 1;
+/* Page Content Container */
+#page-content {
+  opacity: 1; 
   transition: opacity 0.5s ease-in-out;
 }
 
-.fade-out.hidden {
+/* Fade-out class changes opacity to 0 */
+.fade-out {
   opacity: 0;
 }
+
+/* Ensure other styling remains unchanged */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #edf7ed;
+  color: #1b5e20;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
 
 
 /* Background Overlay */
