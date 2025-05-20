@@ -14,7 +14,9 @@ document.addEventListener("scroll", function () {
 
   fadeElements.forEach(el => {
     const position = el.getBoundingClientRect().top;
-    if (position < window.innerHeight - 100) {
+    const screenHeight = window.innerHeight;
+
+    if (position < screenHeight * 0.9) { // Trigger earlier
       el.classList.add("visible");
     }
   });
