@@ -8,3 +8,14 @@ document.addEventListener("scroll", function () {
     }
   });
 });
+
+document.addEventListener("scroll", function () {
+  const fadeElements = document.querySelectorAll(".fade-in");
+
+  fadeElements.forEach(el => {
+    const position = el.getBoundingClientRect().top;
+    if (position < window.innerHeight - 100) {
+      el.classList.add("visible");
+    }
+  });
+});
