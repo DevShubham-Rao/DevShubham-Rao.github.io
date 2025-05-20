@@ -8,6 +8,25 @@ body {
   font-size: 18px;
 }
 
+body {
+  background-image: url('images/bg1.jpg'); /* replace with your image path */
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.section {
+  min-height: 100vh;
+  padding: 64px 32px;
+  background-color: rgba(255, 255, 255, 0.85); /* translucent white overlay */
+  border-radius: 12px;
+  margin: 32px auto;
+  width: 90%;
+  max-width: 1000px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
 header {
   background-color: #2e7d32; /* Forest green */
   padding: 24px;
