@@ -39,26 +39,6 @@ img:hover {
   transform: scale(1.1);
 }
 
-/* Make captions smooth for all images within figures */
-/* Ensure all captions are visible */
-figcaption {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  color: white;
-  text-align: center;
-  padding: 10px;
-  font-size: 16px;
-  opacity: 1; /* Change from 0 to 1 */
-  transform: translateY(0);
-}
-
-/* Fade-in effect on hover */
-figure:hover figcaption {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 
 
