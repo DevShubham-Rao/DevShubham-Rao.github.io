@@ -9,15 +9,4 @@ document.addEventListener("scroll", function () {
   });
 });
 
-document.addEventListener("scroll", function () {
-  const fadeElements = document.querySelectorAll(".fade-in");
 
-  fadeElements.forEach(el => {
-    const position = el.getBoundingClientRect().top;
-    const screenHeight = window.innerHeight;
-
-    if (position < screenHeight * 0.9) { // Trigger earlier
-      el.classList.add("visible");
-    }
-  });
-});
