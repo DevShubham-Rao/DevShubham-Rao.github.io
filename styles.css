@@ -2,90 +2,115 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #e8f5e9; /* Light green background for readability */
+  background-color: #edf7ed; /* Softer pastel green for readability */
   color: #1b5e20; /* Deep green text for contrast */
   line-height: 1.8;
   font-size: 18px;
 }
 
-body {
+/* Background Overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url('what-does-farm-to-table-mean.jpg'); /* replace with your image path */
-  background-attachment: fixed;
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+  opacity: 0.3; /* Softened for better contrast */
+  z-index: -1;
 }
 
+/* Section Styling */
 .section {
   min-height: 100vh;
   padding: 64px 32px;
-  background-color: rgba(255, 255, 255, 0.85); /* translucent white overlay */
+  background-color: rgba(255, 255, 255, 0.9); /* Improved contrast */
   border-radius: 12px;
   margin: 32px auto;
   width: 90%;
   max-width: 1000px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* Header */
 header {
-  background-color: #2e7d32; /* Forest green */
+  background-color: #2e7d32;
   padding: 24px;
   color: white;
   text-align: center;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: bold;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Navigation */
 nav ul {
   list-style: none;
   padding: 0;
   display: flex;
   justify-content: center;
-  gap: 32px;
-  margin-top: 8px;
-  background-color: #43a047;
+  gap: 24px;
+  margin: 8px 0;
+  background-color: #388e3c; /* Refined shade */
   padding: 16px 0;
+  border-radius: 10px;
 }
 
 nav a {
-  color: #f1f8f4; /* Light mint */
+  color: #f1f8f4;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
   font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 6px;
 }
 
 nav a:hover {
-  color: #c5e1a5; /* Soft spring green */
+  background-color: #66bb6a;
+  color: white;
 }
 
+/* Active Navigation Link */
+nav a.active {
+  color: white;
+  background-color: #1b5e20;
+  font-weight: bold;
+}
+
+/* Content Styling */
 main {
   padding: 48px;
-  background-color: #f1f8f4; /* Gentle background */
+  background-color: #f1f8f4;
   min-height: 80vh;
 }
 
+/* Hero Section */
 .hero {
-  background-color: #dcedc8; /* Fresh lime green */
+  background-color: #dcedc8;
   padding: 40px;
   border-radius: 16px;
   margin-bottom: 40px;
   text-align: center;
   font-size: 22px;
   font-weight: 500;
-  box-shadow: 0 0 10px rgba(46, 125, 50, 0.2);
+  box-shadow: 0 0 12px rgba(46, 125, 50, 0.3);
 }
 
+/* Mission and CTA Sections */
 .mission, .call-to-action {
-  background-color: #b9f6ca; /* Minty pale green */
-  padding: 32px;
+  background-color: #b9f6ca;
+  padding: 36px;
   border-radius: 12px;
   margin: 24px 0;
-  border-left: 6px solid #66bb6a; /* Highlight edge */
+  border-left: 6px solid #66bb6a;
   font-size: 20px;
 }
 
+/* Image Section */
 .image-section {
   background-color: #c8e6c9;
   padding: 32px;
@@ -101,62 +126,17 @@ main {
   max-width: 100%;
   height: auto;
   border-radius: 12px;
-  border: 2px solid #a5d6a7;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  border: 3px solid #a5d6a7;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Footer */
 footer {
-  background-color: #1b5e20; /* Deep green */
+  background-color: #1b5e20;
   color: white;
   text-align: center;
   padding: 24px;
   margin-top: 40px;
   font-size: 16px;
-  box-shadow: inset 0 2px 8px rgba(0,0,0,0.2);
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.3);
 }
-
-/* Additional Information Section Styling */
-.info-section {
-  background-color: #d0f0c0;
-  padding: 36px;
-  border-radius: 12px;
-  margin-top: 36px;
-  font-size: 18px;
-  color: #2e4d3f;
-}
-
-.info-section h2 {
-  text-align: center;
-  color: #2e7d32;
-  margin-bottom: 16px;
-}
-
-.info-section p {
-  margin-bottom: 16px;
-}
-
-/* Farm-to-Table and Preparation Process Styling */
-.farm-to-table {
-  background-color: #a5d6a7;
-  padding: 28px;
-  border-radius: 10px;
-  margin-top: 24px;
-  font-size: 18px;
-  color: #1b5e20;
-}
-
-.farm-to-table h3 {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 12px;
-}
-
-.farm-to-table p {
-  margin: 12px 0;
-}
-
-nav a.active {
-  color: #1b5e20; /* Dark forest green */
-  border-bottom: 2px solid #1b5e20;
-}
-
